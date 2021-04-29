@@ -19,7 +19,7 @@ android {
     android.buildFeatures.viewBinding = true
 
     defaultConfig {
-        applicationId = "ke.co.appslab.gradleplugins"
+        applicationId = "com.fasohlabs.homie"
         minSdkVersion(AndroidSdk.minSdkVersion)
         targetSdkVersion(AndroidSdk.targetSdkVersion)
         versionCode = AndroidSdk.versionCode

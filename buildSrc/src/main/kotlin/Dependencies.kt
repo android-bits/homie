@@ -13,6 +13,9 @@ object Versions {
     const val testRunner = "1.3.1-alpha03"
     const val espresso = "3.4.0-alpha03"
     const val annotation = "1.2.0-beta01"
+    const val androidxJUnit = "1.1.2"
+    const val mockitoKotlin = "2.2.0"
+    const val mockito = "3.7.7"
 
     // Gradle Plugins
     const val ktlint = "9.4.1"
@@ -21,6 +24,18 @@ object Versions {
     const val dokka = "1.4.20"
     const val gradleVersionsPlugin = "0.36.0"
     const val jacoco = "0.8.4"
+
+    const val roomVersion = "2.2.6"
+    const val hiltDagger = "2.31.2-alpha"
+    const val hilt = "1.0.0-alpha03"
+
+    const val activityKtx = "1.1.0"
+    const val liveData = "2.2.0"
+
+    const val timber = "4.7.1"
+
+    const val coroutines = "1.3.9"
+    const val coil = "1.1.1"
 }
 
 object BuildPlugins {
@@ -35,6 +50,12 @@ object BuildPlugins {
     const val kotlinParcelizePlugin = "org.jetbrains.kotlin.plugin.parcelize"
     const val gradleVersionsPlugin = "com.github.ben-manes.versions"
     const val jacocoAndroid = "com.hiya.jacoco-android"
+
+    const val daggerHilt = "dagger.hilt.android.plugin"
+    const val kapt = "kotlin-kapt"
+
+    const val javaLibrary = "java-library"
+    const val kotlinLibrary = "kotlin"
 }
 
 object Libraries {
@@ -45,6 +66,28 @@ object Libraries {
         "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
     const val ktxCore = "androidx.core:core-ktx:${Versions.ktx}"
     const val materialComponents = "com.google.android.material:material:${Versions.material}"
+
+    //Room
+    const val roomRuntime = "androidx.room:room-runtime:${Versions.roomVersion}"
+    const val roomCompiler = "androidx.room:room-compiler:${Versions.roomVersion}"
+    const val roomKtx = "androidx.room:room-ktx:${Versions.roomVersion}"
+
+    //hilt
+    const val dagger = "com.google.dagger:hilt-android:${Versions.hiltDagger}"
+    const val daggerCompiler = "com.google.dagger:hilt-android-compiler:${Versions.hiltDagger}"
+    const val hiltViewModel = "androidx.hilt:hilt-lifecycle-viewmodel:${Versions.hilt}"
+    const val hiltCompiler = "androidx.hilt:hilt-compiler:${Versions.hilt}"
+
+    //lifecycle
+    const val liveData = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.liveData}"
+    const val activityKtx = "androidx.activity:activity-ktx:${Versions.activityKtx}"
+
+    const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
+
+    //coroutines
+    const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
+    const val coil = "io.coil-kt:coil:${Versions.coil}"
+
 }
 
 object TestLibraries {
@@ -53,6 +96,11 @@ object TestLibraries {
     const val testRunner = "androidx.test:runner:${Versions.testRunner}"
     const val espresso = "androidx.test.espresso:espresso-core:${Versions.espresso}"
     const val annotation = "androidx.annotation:annotation:${Versions.annotation}"
+
+    const val coroutineTest = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutines}"
+    const val androidxJunit = "androidx.test.ext:junit:${Versions.androidxJUnit}"
+    const val mockitoKotlin = "com.nhaarman.mockitokotlin2:mockito-kotlin:${Versions.mockitoKotlin}"
+    const val mockito = "org.mockito:mockito-core:${Versions.mockito}"
 }
 
 
@@ -62,4 +110,5 @@ object AndroidSdk {
     const val targetSdkVersion = compileSdkVersion
     const val versionCode = 1
     const val versionName = "1.0"
+    const val buildVersionTool = "30.0.3"
 }

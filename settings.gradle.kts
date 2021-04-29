@@ -22,5 +22,10 @@ pluginManagement {
         }
     }
 }
-include("app")
 rootProject.name = "GradlePlugins"
+
+include("app")
+include(":data:database")
+include(":data:network")
+include(":domain")
+include(":core")
