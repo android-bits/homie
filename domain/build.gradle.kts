@@ -9,16 +9,12 @@ plugins {
 //}
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
 }
 
 dependencies {
-    implementation(Libraries.kotlinStandardLibrary)
     implementation(Libraries.coroutines)
-
-    implementation(Libraries.dagger)
-    kapt(Libraries.daggerCompiler)
 
     testImplementation(TestLibraries.mockitoKotlin)
     testImplementation(TestLibraries.mockito)

@@ -30,13 +30,11 @@ android {
 
     buildTypes {
         getByName("debug") {
-            isDebuggable = true
             isTestCoverageEnabled = false
         }
 
         getByName("release") {
             isMinifyEnabled = true
-            isUseProguard = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -44,11 +42,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = JavaVersion.VERSION_11.toString()
     }
 
     packagingOptions {
@@ -58,7 +56,6 @@ android {
 }
 
 dependencies {
-    api(Libraries.kotlinStandardLibrary)
     api(Libraries.ktxCore)
 
     api(Libraries.timber)
