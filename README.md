@@ -13,7 +13,7 @@
 Before every commit, make sure you run the following command:
 
 ```shell script
-./codeAnalysis
+./codeAnalysis.sh
 ```
 
 To check for dependency updates, run the following command:

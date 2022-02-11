@@ -5,19 +5,15 @@ plugins {
 }
 
 android {
-    compileSdkVersion(AndroidSdk.compileSdkVersion)
-    buildToolsVersion(AndroidSdk.buildVersionTool)
+    compileSdk = AndroidSdk.compileSdkVersion
+    buildToolsVersion = AndroidSdk.buildVersionTool
 
     defaultConfig {
-        compileSdkVersion(AndroidSdk.compileSdkVersion)
-        buildToolsVersion(AndroidSdk.buildVersionTool)
+        minSdk = AndroidSdk.minSdkVersion
+        targetSdk = AndroidSdk.targetSdkVersion
 
-        defaultConfig {
-            minSdkVersion(AndroidSdk.minSdkVersion)
-            targetSdkVersion(AndroidSdk.targetSdkVersion)
-
-            testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        }
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunnerArguments["clearPackageData"] = "true"
     }
 
     testOptions {

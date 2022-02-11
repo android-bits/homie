@@ -4,20 +4,20 @@ plugins {
     id(BuildPlugins.kapt)
 }
 
-//apply {
+// apply {
 //    apply(from = "../jacoco.gradle")
-//}
+// }
 
 android {
-    compileSdkVersion(AndroidSdk.compileSdkVersion)
-    buildToolsVersion(AndroidSdk.buildVersionTool)
+    compileSdk = AndroidSdk.compileSdkVersion
+    buildToolsVersion = AndroidSdk.buildVersionTool
 
     defaultConfig {
-        minSdkVersion(AndroidSdk.minSdkVersion)
-        targetSdkVersion(AndroidSdk.targetSdkVersion)
+        minSdk = AndroidSdk.minSdkVersion
+        targetSdk = AndroidSdk.targetSdkVersion
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        testInstrumentationRunnerArgument("clearPackageData", "true")
+        testInstrumentationRunnerArguments["clearPackageData"] = "true"
     }
 
     testOptions {
@@ -35,8 +35,8 @@ android {
         getByName("release") {
             isMinifyEnabled = true
             proguardFiles(
-                    getDefaultProguardFile("proguard-android-optimize.txt"),
-                    "proguard-rules.pro"
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
             )
         }
     }
@@ -60,5 +60,4 @@ dependencies {
 
     implementation(Libraries.dagger)
     kapt(Libraries.daggerCompiler)
-
 }
