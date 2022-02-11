@@ -12,16 +12,14 @@ jacoco {
 
 android {
 
-    compileSdkVersion(AndroidSdk.compileSdkVersion)
-    buildToolsVersion("30.0.2")
-
+    compileSdk = AndroidSdk.compileSdkVersion
     android.buildFeatures.dataBinding = true
     android.buildFeatures.viewBinding = true
 
     defaultConfig {
         applicationId = "com.fasohlabs.homie"
-        minSdkVersion(AndroidSdk.minSdkVersion)
-        targetSdkVersion(AndroidSdk.targetSdkVersion)
+        minSdk = AndroidSdk.minSdkVersion
+        targetSdk = AndroidSdk.targetSdkVersion
         versionCode = AndroidSdk.versionCode
         versionName = AndroidSdk.versionName
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -40,10 +38,6 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
 
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
-
     buildTypes {
         getByName("release") {
             isMinifyEnabled = false
@@ -53,7 +47,6 @@ android {
 
     dependencies {
         implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-        implementation(Libraries.kotlinStandardLibrary)
         implementation(Libraries.appCompat)
         implementation(Libraries.ktxCore)
         implementation(Libraries.constraintLayout)

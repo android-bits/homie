@@ -1,29 +1,28 @@
 object Versions {
 
     //Version codes for all the libraries
-    const val kotlin = "1.4.21"
-    const val buildToolsVersion = "4.1.1"
-    const val appCompat = "1.3.0-beta01"
-    const val constraintLayout = "2.1.0-alpha2"
-    const val ktx = "1.5.0-beta01"
-    const val material = "1.3.0-rc01"
+    const val kotlin = "1.6.0"
+    const val appCompat = "1.4.0-rc01"
+    const val constraintLayout = "2.1.1"
+    const val ktx = "1.7.0"
+    const val material = "1.5.0-beta01"
 
     //Version codes for all the test libraries
-    const val junit4 = "4.13.1"
-    const val testRunner = "1.3.1-alpha03"
-    const val espresso = "3.4.0-alpha03"
-    const val annotation = "1.2.0-beta01"
+    const val junit4 = "4.13.2"
+    const val testRunner = "1.4.1-alpha03"
+    const val espresso = "3.5.0-alpha03"
+    const val annotation = "1.3.0"
     const val androidxJUnit = "1.1.2"
     const val mockitoKotlin = "2.2.0"
     const val mockito = "3.7.7"
 
     // Gradle Plugins
-    const val ktlint = "9.4.1"
-    const val detekt = "1.14.2"
-    const val spotless = "5.9.0"
-    const val dokka = "1.4.20"
-    const val gradleVersionsPlugin = "0.36.0"
-    const val jacoco = "0.8.4"
+    const val ktlint = "10.2.0"
+    const val detekt = "1.18.0"
+    const val spotless = "6.0.0"
+    const val dokka = "1.5.31"
+    const val gradleVersionsPlugin = "0.39.0"
+    const val jacoco = "0.8.7"
 
     const val roomVersion = "2.2.6"
     const val hiltDagger = "2.31.2-alpha"
@@ -106,7 +105,7 @@ object TestLibraries {
 
 object AndroidSdk {
     const val minSdkVersion = 21
-    const val compileSdkVersion = 30
+    const val compileSdkVersion = 31
     const val targetSdkVersion = compileSdkVersion
     const val versionCode = 1
     const val versionName = "1.0"
