@@ -35,6 +35,9 @@ object Versions {
 
     const val coroutines = "1.3.9"
     const val coil = "1.1.1"
+
+    const val retrofit = "2.9.0"
+    const val okhttp = "4.9.1"
 }
 
 object BuildPlugins {
@@ -86,6 +89,14 @@ object Libraries {
     //coroutines
     const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
     const val coil = "io.coil-kt:coil:${Versions.coil}"
+
+    //Network
+    const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
+    const val gsonConverter = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
+
+    //OkHttp
+    const val okhttp = "com.squareup.okhttp3:okhttp:${Versions.okhttp}"
+    const val okhttpLogger = "com.squareup.okhttp3:logging-interceptor:${Versions.okhttp}"
 
 }
 

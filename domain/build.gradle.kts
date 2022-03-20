@@ -4,9 +4,9 @@ plugins {
     id(BuildPlugins.kapt)
 }
 
-//apply {
+// apply {
 //    apply(from = "../jacoco.gradle")
-//}
+// }
 
 java {
     sourceCompatibility = JavaVersion.VERSION_11

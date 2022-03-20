@@ -58,6 +58,12 @@ android {
 dependencies {
     implementation(Libraries.ktxCore)
 
+    implementation(Libraries.okhttp)
+    implementation(Libraries.okhttpLogger)
+
+    implementation(Libraries.retrofit)
+    implementation(Libraries.gsonConverter)
+
     implementation(Libraries.dagger)
     kapt(Libraries.daggerCompiler)
 }
